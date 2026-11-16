@@ -8,7 +8,8 @@ import 'package:flutter_abdan_rpl3/listview_widget/list_basic.dart';
 import 'package:flutter_abdan_rpl3/listview_widget/list_builder2.dart';
 import 'package:flutter_abdan_rpl3/listview_widget/list_builder_widget.dart';
 import 'package:flutter_abdan_rpl3/listview_widget/list_separated.dart';
-import 'package:flutter_abdan_rpl3/navigation/contoh_nav.dart';
+import 'package:flutter_abdan_rpl3/navigation/menu.dart';
+import 'package:flutter_abdan_rpl3/routes/app_route.dart';
 import 'package:flutter_abdan_rpl3/row_column.dart/latihan_row_widget.dart';
 import 'package:flutter_abdan_rpl3/sized_box_stack_expanded_position/ExpandedWidget.dart';
 import 'package:flutter_abdan_rpl3/sized_box_stack_expanded_position/LatihanWidget.dart';
@@ -29,19 +30,20 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      initialRoute: '/',
-      routes: {
-        '/':     (context) => ContohNav(),
-        '/grid': (context) => GridBasic(),
-        '/list': (context) => latihanlistwidget(),
-        '/container_widget': (context) => LatihanContainer(),
-        '/gridview': (context) => GridLatihanWidget(),
-        '/row_column': (context) => LatihanLayoutDua(),
-        '/sized_box': (context) => LatihanWidget(),
+      initialRoute: AppRoute.menu,
+      routes: AppRoute.routes,
+      // routes: {
+      //   '/':     (context) => ContohNav(),
+      //   '/grid': (context) => GridBasic(),
+      //   '/list': (context) => latihanlistwidget(),
+      //   '/container_widget': (context) => LatihanContainer(),
+      //   '/gridview': (context) => GridLatihanWidget(),
+      //   '/row_column': (context) => LatihanLayoutDua(),
+      //   '/sized_box': (context) => LatihanWidget(),
 
 
 
-      },
+      // },
       debugShowCheckedModeBanner: false,
       // home: Scaffold(
       //   appBar: AppBar(
