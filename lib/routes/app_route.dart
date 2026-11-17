@@ -5,6 +5,7 @@ import 'package:flutter_abdan_rpl3/listview_widget/latihan_list_widget.dart';
 import 'package:flutter_abdan_rpl3/listview_widget/list_basic.dart';
 import 'package:flutter_abdan_rpl3/container_widget/latihan_container.dart';
 import 'package:flutter_abdan_rpl3/pages/formulir_input_page.dart';
+import 'package:flutter_abdan_rpl3/pages/latihan_formulir_input_page.dart';
 // import 'package:flutter_abdan_rpl3/layout/row_column.dart';
 // import 'package:flutter_abdan_rpl3/layout/sized_box.dart';
 
@@ -18,6 +19,7 @@ class AppRoute {
   static const rowColumn = '/row_column';
   static const sizedBox = '/sized_box';
   static const formEkskul = '/form_ekskul';
+  static const formPpdb = '/formppdb';
 
 
   static Map<String, WidgetBuilder> routes = {
@@ -28,6 +30,7 @@ class AppRoute {
     listBasic: (context) => ListBasic(),
     containerWidget: (context) => LatihanContainer(),
     formEkskul: (context) => const FormEkskul(),
+    formPpdb: (context) => const FormPpdb(),
 
     // rowColumn: (context) => RowColumnWidget(),
     // sizedBox: (context) => SizedBoxWidget(),

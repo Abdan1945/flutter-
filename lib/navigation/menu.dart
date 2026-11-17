@@ -116,6 +116,15 @@ class MenuNav extends StatelessWidget {
               iconColor: Colors.pink,
               onTap: () => Navigator.pushNamed(context, '/form_ekskul'),
             ),
+            const SizedBox(height: 12),
+            _buildMenuCard(
+              context: context,
+              title: "Formulir Pendaftaran PPDB",
+              subtitle: "Pendaftaran siswa baru",
+              icon: Icons.school_rounded,
+              iconColor: Colors.blue,
+              onTap: () => Navigator.pushNamed(context, '/formppdb'),
+            ),
             const SizedBox(height: 24),
 
             // --- KATEGORI 2: GRID & LIST ---
