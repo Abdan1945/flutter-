@@ -163,6 +163,15 @@ class MenuNav extends StatelessWidget {
               iconColor: Colors.orange,
               onTap: () => Navigator.pushNamed(context, '/gridview'),
             ),
+            const SizedBox(height: 10),
+            _buildMenuCard(
+              context: context,
+              title: "Halaman Album",
+              subtitle: "Menampilkan data album dari API",
+              icon: Icons.album_rounded,
+              iconColor: Colors.blue,
+              onTap: () => Navigator.pushNamed(context, '/album_page'),
+            ),
             const SizedBox(height: 24),
 
             // --- KATEGORI 3: LAYOUTING & STRUKTUR ---
